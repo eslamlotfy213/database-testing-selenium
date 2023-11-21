@@ -1,0 +1,57 @@
+open SQL server
+login with authentication
+       username root
+       password Azaz123#
+
+properites > security
+select server authentication > SQL Server and Windows
+restard PC
+open security >  Logins > New login
+           enter  Login name
+           SQL Server authentication
+           password
+           Confirm password
+           click ok button
+
+create BD Qadbt
+
+
+--------------------------------Selenuim Database----------------------------------------------------------------
+download mysql
+http://dev.mysql.com/downloads/
+
+STA\Eslam.Lotfy
+
+1.install mysql server 
+2.create database in mysql server
+create database Qadbt;
+BD Qadbt
+username root
+password Azaz123#
+insert into Table value()
+create maven project 
+create class
+add dependency
+
+
+
+
+
+
+
+use-------------mysql-connector--------------------------------
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>8.0.33</version>
+			</dependency>
+			
+        Connection con = DriverManager.getConnection("jdbc:mysql://"+ localhost +":"+3306+"/Qadbt",username,password);
+use-------------sqlserver-connector--------------------------------
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>9.4.0.jre11</version>
+        </dependency>
+        Connection con = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;databaseName=Qadbt;user=root;password=Azaz123#;");
+
